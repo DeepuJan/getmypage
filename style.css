@@ -1,6 +1,6 @@
-.headimg {
+.heading {
     width: 100%;
-    height: 550px;
+    height: 590px;
     position: relative;
     margin-bottom: 80px;
 }
@@ -66,4 +66,29 @@
 }
 .p1det a,.p2det a,.p3det a,.p4det a,.p5det a,.p6det a {
     font-size: 20px;
+}
+@media (max-width: 768px) {
+    .textonimg h1 {
+        font-size: 30px;
+    }
+
+    .textonimg p {
+        font-size: 16px;
+    }
+
+    .p1, .p2, .p3, .p4, .p5, .p6 {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center;
+    }
+
+    .tajmahal, .golden, .RedFort, .Manali, .Charminar, .Gateway {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .p1det, .p2det, .p3det, .p4det, .p5det, .p6det {
+        margin-left: 0;
+        text-align: center;
+    }
 }
